@@ -195,11 +195,8 @@ const (
 If `ListDevices()` returns no devices:
 
 1. **Check USB connection** - Ensure the SDWireC is properly connected
-2. **Verify device** - Run the debug utility to list all USB devices:
-   ```bash
-   go run debug/list_usb.go
-   ```
-3. **Check VID/PID** - SDWireC should appear as `04E8:6001`
+2. **Check VID/PID** - SDWireC should appear as `04E8:6001` when listing USB devices
+3. **Verify permissions** - Ensure you have proper USB device access permissions
 
 ### Permission Issues (Linux)
 
