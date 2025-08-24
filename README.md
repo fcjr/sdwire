@@ -8,11 +8,8 @@ Go library for controlling SDWireC devices - USB-controlled SD card multiplexers
 ## Features
 
 🔀 **SD Card Switching** - Switch SD cards between target device and host computer  
-🎯 **Simple API** - Easy-to-use interface following Go best practices  
 🔍 **Device Discovery** - Automatically find and enumerate connected devices  
 💾 **Device Information** - Access device serial, product, and manufacturer details  
-🖥️ **Cross-Platform** - Works on Linux, macOS, and Windows  
-⚡ **No Dependencies** - Only uses standard library and gousb  
 
 ## Installation
 
