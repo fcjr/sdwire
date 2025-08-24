@@ -258,4 +258,4 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-Made with ❤️ for embedded testing automation
+**Made with ❤️ at the [@recursecenter](https://www.recurse.com/)**
