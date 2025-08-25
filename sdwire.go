@@ -195,7 +195,7 @@ func (s *SDWireC) SetMode(mode SwitchMode) error {
 	default:
 		return fmt.Errorf("invalid switch mode: %v", mode)
 	}
-	
+
 	return s.setSdwire(target)
 }
 
@@ -212,7 +212,7 @@ func (s *SDWireC) setSdwire(target byte) error {
 	// In FTDI terms: wValue = (mode << 8) | mask
 	// where mode = FTDI_SIO_BITMODE_CBUS (0x20) and mask = 0xF0 | target
 	value := uint16(ftdiSioBitmodeCbus<<8) | uint16(0xF0|target)
-	
+
 	_, err := s.device.Control(
 		gousb.ControlOut|gousb.ControlVendor|gousb.ControlDevice,
 		ftdiSioSetBitmodeRequest,
@@ -220,7 +220,7 @@ func (s *SDWireC) setSdwire(target byte) error {
 		0,
 		nil,
 	)
-	
+
 	if err != nil {
 		return fmt.Errorf("failed to set SDWire mode: %w", err)
 	}
