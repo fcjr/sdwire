@@ -3,7 +3,7 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/fcjr/sdwire.svg)](https://pkg.go.dev/github.com/fcjr/sdwire)
 [![Go Report Card](https://goreportcard.com/badge/github.com/fcjr/sdwire)](https://goreportcard.com/report/github.com/fcjr/sdwire)
 
-Go library for controlling SDWireC devices - USB-controlled SD card multiplexers for automated testing and development.
+Go library for controlling SDWireC & SDWire3 devices - USB-controlled SD card multiplexers for automated testing and development.
 
 ## Features
 
